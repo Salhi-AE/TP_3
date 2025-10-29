@@ -9,3 +9,7 @@ def test_passing_1_return_1():
 
 def test_passing_2_return_2():
         assert add_numbers_from_string("2") == 2
+
+
+def test_passing_3_return_3():
+        assert add_numbers_from_string("3") == 3
