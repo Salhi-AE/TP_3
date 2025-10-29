@@ -1,2 +1,2 @@
 def add_numbers_from_string(numbers: str)->int:
-    pass
+    return 0
