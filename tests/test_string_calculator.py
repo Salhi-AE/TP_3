@@ -20,7 +20,8 @@ from src.string_calculator import add_numbers_from_string
                                                     ('1,2',3),
                                                     ('2,0',2),
                                                     ('2,1',3),
-                                                    ('2,2',4),])
+                                                    ('2,2',4),
+                                                    ])
 def test_string_return_result_expected(String, result_expected):
     actual_result = add_numbers_from_string(String)
     assert actual_result == result_expected
