@@ -1,15 +1,7 @@
+import pytest
 from src.string_calculator import add_numbers_from_string
 
-def test_passing_empty_value_return_0():
-    assert add_numbers_from_string("") == 0
-def test_passing_0_return_0():
-    assert add_numbers_from_string("0") == 0
-def test_passing_1_return_1():
-    assert add_numbers_from_string("1") == 1
-
-def test_passing_2_return_2():
-        assert add_numbers_from_string("2") == 2
-
-
-def test_passing_3_return_3():
-        assert add_numbers_from_string("3") == 3
+@pytest.mark.parametrize('String,result_expected', [('',0),('0',0),('1',1),('2',2),('3',3)])
+def test_string_return_result_expected(String, result_expected):
+    actual_result = add_numbers_from_string(String)
+    assert actual_result == result_expected
