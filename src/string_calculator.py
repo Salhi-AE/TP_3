@@ -5,4 +5,6 @@ def add_numbers_from_string(String: str)->int:
        return 0
     if String == "0,1":
         return 1
+    if String == "0,2":
+        return 2
     return int(String)

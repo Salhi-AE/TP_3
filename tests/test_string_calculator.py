@@ -13,7 +13,8 @@ from src.string_calculator import add_numbers_from_string
                                                     ('8',8),
                                                     ('9',9),
                                                     ('0,0',0),
-                                                    ('0,1',1),])
+                                                    ('0,1',1),
+                                                    ('0,2',2),])
 def test_string_return_result_expected(String, result_expected):
     actual_result = add_numbers_from_string(String)
     assert actual_result == result_expected
